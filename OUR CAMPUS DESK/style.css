@@ -1,0 +1,1103 @@
+/* =========================================
+   1. GENERAL STYLES
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f8f9;
+  color: #1b2b32;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   2. NAVIGATION BAR
+========================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 14px 0;
+}
+
+.logo {
+  color: #0b2f36;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #14707a;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-links a {
+  color: #1b2b32;
+  text-decoration: none;
+  padding: 10px 17px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Courses and Contact */
+
+.nav-links a:not(.nav-button):not([href="index.html"]) {
+  background-color: transparent;
+}
+
+.nav-links a:not(.nav-button):not([href="index.html"]):hover {
+  background-color: #e3f1f2;
+  color: #14707a;
+}
+
+/* Back To Home - Different Color */
+
+.nav-links a[href="index.html"] {
+  background-color: #e3f1f2;
+  color: #0b5963;
+}
+
+.nav-links a[href="index.html"]:hover {
+  background-color: #0b5963;
+  color: #ffffff;
+}
+
+/* Register Button */
+
+.nav-links a.nav-button {
+  background-color: #ffb627;
+  color: #0b2f36;
+  padding: 11px 23px;
+}
+
+.nav-links a.nav-button:hover {
+  background-color: #0b2f36;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   3. BUTTONS
+========================================= */
+
+.btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffb627;
+  color: #0b2f36;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(255, 182, 39, 0.3);
+}
+
+.btn-dark {
+  background-color: #14707a;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #0b2f36;
+}
+
+.btn-light {
+  background-color: #e3f1f2;
+  color: #0b2f36;
+}
+
+.btn-light:hover {
+  background-color: #c8e0e3;
+}
+
+
+/* =========================================
+   4. HOME PAGE - HERO SECTION
+========================================= */
+
+.hero {
+  padding: 70px 0 90px;
+  background: linear-gradient(135deg, #0b2f36, #14707a);
+  color: #ffffff;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero-text h1 span {
+  color: #ffb627;
+}
+
+.hero-text p {
+  max-width: 480px;
+  margin-top: 15px;
+  color: #cfe6e8;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #0b2f36;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   5. STATISTICS SECTION
+========================================= */
+
+.stats {
+  margin-top: -45px;
+}
+
+.stats-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 22px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(11, 47, 54, 0.12);
+}
+
+.stat-number {
+  color: #14707a;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.stat-label {
+  color: #64777e;
+}
+
+
+/* =========================================
+   6. GENERAL SECTIONS
+========================================= */
+
+.section {
+  padding: 50px 0;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  color: #0b2f36;
+  font-size: 32px;
+}
+
+.section-text {
+  margin-bottom: 30px;
+  color: #64777e;
+}
+
+.section-flush {
+  padding-top: 0;
+}
+
+
+/* =========================================
+   7. COURSES PAGE
+========================================= */
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  flex: 1;
+  min-width: 200px;
+  padding: 26px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(20, 112, 122, 0.2);
+}
+
+.course-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  background-color: #fff1cf;
+  font-size: 26px;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+  color: #0b2f36;
+  font-size: 18px;
+}
+
+.course-card p {
+  color: #64777e;
+}
+
+
+/* =========================================
+   8. STUDENT INFORMATION
+========================================= */
+
+.panel {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.info-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 18px;
+  border-left: 5px solid #ffb627;
+  border-radius: 14px;
+  background-color: #f4f8f9;
+}
+
+.info-label {
+  color: #64777e;
+  font-size: 14px;
+}
+
+.info-value {
+  color: #0b2f36;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   9. CAMPUS LIFE - MEDIA
+========================================= */
+
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.media-box {
+  flex: 1;
+  min-width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.media-box h3 {
+  margin-bottom: 15px;
+  color: #0b2f36;
+}
+
+.media-box img,
+.media-box video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.media-box audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+/* =========================================
+   10. HOME PAGE CONTACT SECTION
+========================================= */
+
+.contact-box {
+  padding: 50px 20px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0b2f36, #14707a);
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-box h2 {
+  font-size: 30px;
+}
+
+.contact-box p {
+  margin: 12px 0;
+}
+
+.contact-box a {
+  color: #ffb627;
+}
+
+.contact-box a.btn {
+  color: #0b2f36;
+}
+
+
+/* =========================================
+   11. INNER PAGE HERO
+========================================= */
+
+.page-hero {
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #0b2f36, #14707a);
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-hero h1 {
+  margin-bottom: 12px;
+  font-size: 38px;
+}
+
+.page-hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #cfe6e8;
+}
+
+
+/* =========================================
+   12. REGISTRATION PAGE LAYOUT
+========================================= */
+
+.form-section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: start;
+  gap: 30px;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LEFT INFORMATION PANEL */
+
+.form-side {
+  position: static;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 30px 24px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #0b2f36, #14707a);
+  color: #ffffff;
+}
+
+.form-side-icon {
+  margin-bottom: 18px;
+  font-size: 40px;
+}
+
+.form-side h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.form-side p {
+  margin-bottom: 18px;
+  color: #cfe6e8;
+}
+
+.form-side ul {
+  padding: 0;
+  list-style: none;
+}
+
+.form-side li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.form-side-bottom {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-side-bottom p {
+  margin-bottom: 8px;
+}
+
+.form-side-bottom a {
+  color: #ffb627;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form-side-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+/* RIGHT FORM AREA */
+
+.form-main {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+}
+
+
+/* =========================================
+   13. FORM CARDS
+========================================= */
+
+.form-card {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 25px;
+  padding: 30px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: #0b2f36;
+  font-size: 24px;
+}
+
+.form-card-heading {
+  margin-bottom: 25px;
+}
+
+.form-card-heading h2 {
+  margin-bottom: 8px;
+}
+
+.form-card-heading p {
+  color: #64777e;
+}
+
+.small-heading {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #e3f1f2;
+  color: #14707a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#register {
+  width: 100%;
+  max-width: none;
+}
+
+#contact-form {
+  width: 90%;
+  max-width: 750px;
+  margin: 45px auto;
+}
+
+
+/* =========================================
+   14. FORM SECTION HEADINGS
+========================================= */
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e3f1f2;
+  color: #0b2f36;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form-section-title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffb627;
+  color: #0b2f36;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   15. FORM ROWS AND FIELD GROUPS
+========================================= */
+
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.field-group {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 17px;
+}
+
+
+/* =========================================
+   16. FORM LABELS
+========================================= */
+
+.field-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #263c42;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+
+/* =========================================
+   17. INPUT, SELECT AND TEXTAREA
+========================================= */
+
+.field-group input:not([type="checkbox"]),
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d7e3e5;
+  border-radius: 10px;
+  background-color: #f8fbfb;
+  color: #1b2b32;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.field-group input:hover,
+.field-group select:hover,
+.field-group textarea:hover {
+  border-color: #b9d2d6;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: #14707a;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(20, 112, 122, 0.12);
+}
+
+.field-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+
+/* =========================================
+   18. CHECKBOXES - COURSES OF INTEREST
+========================================= */
+
+.check-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid #d7e3e5;
+  border-radius: 25px;
+  background-color: #f4f8f9;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.check-item:hover {
+  border-color: #14707a;
+  background-color: #e3f1f2;
+}
+
+.check-item input {
+  width: auto;
+  accent-color: #14707a;
+}
+
+
+/* =========================================
+   19. CONFIRMATION CHECKBOX
+========================================= */
+
+.confirmation-box {
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px solid #d7e3e5;
+  border-radius: 12px;
+  background-color: #f4f8f9;
+}
+
+.confirmation-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #42575e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirmation-label input {
+  margin-top: 5px;
+  accent-color: #14707a;
+}
+
+
+/* =========================================
+   20. FORM BUTTONS
+========================================= */
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  flex: 1;
+  min-width: 180px;
+}
+
+
+/* =========================================
+   21. CONTACT PAGE
+========================================= */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  align-items: start;
+  gap: 30px;
+
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+.contact-information {
+  padding: 30px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #0b2f36, #14707a);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(11, 47, 54, 0.15);
+}
+
+.contact-information h2 {
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+
+.contact-information>p {
+  margin-bottom: 25px;
+  color: #cfe6e8;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact-detail:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 12px;
+  background-color: rgba(255, 182, 39, 0.18);
+  color: #ffb627;
+  font-size: 22px;
+}
+
+.contact-detail h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.contact-detail p,
+.contact-detail a {
+  color: #cfe6e8;
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-detail a:hover {
+  color: #ffb627;
+}
+
+.contact-form-card {
+  width: 100%;
+  margin: 0;
+}
+
+.contact-form-card h2 {
+  margin-bottom: 8px;
+}
+
+.contact-submit {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   22. FOOTER
+========================================= */
+
+.footer {
+  margin-top: 30px;
+  padding: 24px 0;
+  background-color: #0b2f36;
+  color: #a9c5c9;
+  text-align: center;
+}
+
+.footer-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: #ffb627;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+
+/* =========================================
+   23. BACK TO HOME BUTTON
+========================================= */
+
+.back-home {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 25px;
+  background-color: #0b5963;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #ffb627;
+  color: #0b2f36;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   24. RESPONSIVE DESIGN - TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+  .form-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================================
+   25. RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .navbar-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 40px 0 70px;
+  }
+
+  .hero-inner {
+    gap: 25px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-image img {
+    height: 220px;
+  }
+
+  .page-hero {
+    padding: 40px 15px;
+  }
+
+  .page-hero h1 {
+    font-size: 30px;
+  }
+
+  .form-layout {
+    grid-template-columns: 1fr;
+    width: 92%;
+  }
+
+  .form-side,
+  .form-main {
+    grid-column: 1;
+    width: 100%;
+    max-width: none;
+  }
+
+  .form-side {
+    padding: 24px 20px;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+
+  .media-box {
+    min-width: 100%;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .info-value {
+    font-size: 18px;
+  }
+
+  .contact-layout {
+    width: 90%;
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .contact-information,
+  .contact-form-card {
+    padding: 22px;
+  }
+
+}
+
+
+/* =========================================
+   26. SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 400px) {
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-links a {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .hero-text h1 {
+    font-size: 29px;
+  }
+
+  .form-card {
+    padding: 16px;
+  }
+
+}

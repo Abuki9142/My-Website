@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register as a student at Campus Desk">
+  <title>Campus Desk | Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+
+      <a class="logo" href="index.html">
+        Campus<span>Desk</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Back To Home</a>
+        <a href="course.html">Courses</a>
+        <a href="contact-us.html">Contact</a>
+        <a class="nav-button active" href="Form.html">Register</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+
+        <span class="hero-badge">JOIN OUR CAMPUS</span>
+
+        <h1>Student Registration</h1>
+
+        <p>
+          Complete the form below with your correct information.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- REGISTRATION SECTION -->
+    <section class="section form-section">
+
+      <div class="container form-layout">
+
+        <!-- LEFT INFORMATION PANEL -->
+        <aside class="form-side">
+
+          <div class="form-side-icon">🎓</div>
+
+          <h2>Join Campus Desk</h2>
+
+          <p>
+            Welcome! Fill in the registration form to provide
+            your personal and academic information.
+          </p>
+
+          <ul>
+            <li>✓ Personal information</li>
+            <li>✓ Academic information</li>
+            <li>✓ Department selection</li>
+            <li>✓ Courses of interest</li>
+          </ul>
+
+          <div class="form-side-bottom">
+            <p>Need assistance?</p>
+            <a href="contact-us.html">
+              Contact our team →
+            </a>
+          </div>
+
+        </aside>
+
+
+        <!-- RIGHT REGISTRATION FORM -->
+        <div class="form-main">
+
+          <div class="form-card" id="register">
+
+            <div class="form-card-heading">
+
+              <span class="small-heading">
+                REGISTRATION FORM
+              </span>
+
+              <h2>Student Registration</h2>
+
+              <p>
+                Please complete all required fields.
+              </p>
+
+            </div>
+
+
+            <form action="#" method="post">
+
+              <!-- PERSONAL INFORMATION -->
+              <div class="form-section-title">
+                <span>01</span>
+                Personal Information
+              </div>
+
+
+              <div class="field-row">
+
+                <div class="field-group">
+                  <label for="fullname">Full Name *</label>
+
+                  <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"
+                    autocomplete="name" required>
+                </div>
+
+
+                <div class="field-group">
+                  <label for="phone">Phone Number *</label>
+
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel"
+                    required>
+                </div>
+
+              </div>
+
+
+              <div class="field-row">
+
+                <div class="field-group">
+                  <label for="email">Email Address *</label>
+
+                  <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email"
+                    required>
+                </div>
+
+
+                <div class="field-group">
+                  <label for="dob">Date of Birth *</label>
+
+                  <input type="date" id="dob" name="dob" required>
+                </div>
+
+              </div>
+
+
+              <div class="field-group">
+                <label for="gender">Gender *</label>
+
+                <select id="gender" name="gender" required>
+                  <option value="">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+
+              <div class="field-group">
+                <label for="address">Address *</label>
+
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+              </div>
+
+
+
+              <!-- ACADEMIC INFORMATION -->
+              <div class="form-section-title">
+                <span>02</span>
+                Academic Information
+              </div>
+
+
+              <div class="field-row">
+
+                <div class="field-group">
+                  <label for="studentid">Student ID *</label>
+
+                  <input type="text" id="studentid" name="studentid" placeholder="WOUR/0000/00" required>
+                </div>
+
+
+                <div class="field-group">
+                  <label for="department">Department *</label>
+
+                  <select id="department" name="department" required>
+                    <option value="">Select department</option>
+                    <option>Computer Science</option>
+                    <option>Information System</option>
+                    <option>Computer Engineering</option>
+                    <option>Software Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Civil Engineering</option>
+                  </select>
+                </div>
+
+              </div>
+
+
+              <div class="field-row">
+
+                <div class="field-group">
+                  <label for="year">Year of Study *</label>
+
+                  <select id="year" name="year" required>
+                    <option value="">Select year</option>
+                    <option>Year 1</option>
+                    <option>Year 2</option>
+                    <option>Year 3</option>
+                    <option>Year 4</option>
+                    <option>Year 5</option>
+                  </select>
+                </div>
+
+
+                <div class="field-group">
+                  <label for="program">Study Program *</label>
+
+                  <select id="program" name="program" required>
+                    <option value="">Select program</option>
+                    <option>Regular</option>
+                    <option>Extension</option>
+                    <option>Distance</option>
+                    <option>Summer</option>
+                  </select>
+                </div>
+
+              </div>
+
+
+
+              <!-- COURSES OF INTEREST -->
+              <div class="form-section-title">
+                <span>03</span>
+                Courses of Interest
+              </div>
+
+
+              <div class="field-group">
+
+                <label>Select your interests</label>
+
+                <div class="check-list">
+
+                  <label class="check-item">
+                    <input type="checkbox" name="interest" value="HTML">
+                    <span>HTML</span>
+                  </label>
+
+
+                  <label class="check-item">
+                    <input type="checkbox" name="interest" value="CSS">
+                    <span>CSS</span>
+                  </label>
+
+
+                  <label class="check-item">
+                    <input type="checkbox" name="interest" value="JavaScript">
+                    <span>JavaScript</span>
+                  </label>
+
+
+                  <label class="check-item">
+                    <input type="checkbox" name="interest" value="Python">
+                    <span>Python</span>
+                  </label>
+
+
+                  <label class="check-item">
+                    <input type="checkbox" name="interest" value="Database">
+                    <span>Database</span>
+                  </label>
+
+                </div>
+
+              </div>
+
+
+
+              <!-- CONFIRMATION -->
+              <div class="confirmation-box">
+
+                <label class="confirmation-label">
+
+                  <input type="checkbox" name="confirmation" required>
+
+                  <span>
+                    I confirm that the information provided
+                    above is correct.
+                  </span>
+
+                </label>
+
+              </div>
+
+
+
+              <!-- FORM BUTTONS -->
+              <div class="form-buttons">
+
+                <button class="btn btn-dark" type="submit">
+                  Submit Registration
+                </button>
+
+                <button class="btn btn-light" type="reset">
+                  Reset Form
+                </button>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <a class="footer-logo" href="index.html">
+        CampusDesk
+      </a>
+
+      <p>
+        &copy; 2026 Campus Desk. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
